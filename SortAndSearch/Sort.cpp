@@ -18,3 +18,22 @@ std::vector<int16_t> FSort::InsertionSort(std::vector<int16_t> sortable){
 	}
 	return sortedVector;
 }
+
+std::vector<int16_t> FSort::SelectionSort(std::vector<int16_t> sortable){
+	std::vector<int16_t> sortedVector = sortable;
+	int16_t minPos, temp;
+	for (int i = 0; i < sortedVector.size() - 1; i++){
+		minPos = i;
+		for (int j = i + 1; j < sortedVector.size(); j++){
+			if (sortedVector[j] < sortedVector[minPos]){
+				minPos = j;
+			}
+		}
+		if (minPos != i){
+			temp = sortedVector.at(i);
+			sortedVector.at(i) = sortedVector.at(minPos);
+			sortedVector.at(minPos) = temp;
+		}
+	}
+	return sortedVector;
+}
