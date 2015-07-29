@@ -1,7 +1,7 @@
 #include "SortingAlgorithm.h"
 
 SortingAlgorithm::SortingAlgorithm(){
-	std::cout << "Initialized sorting algorithm without name or description" << std::endl;
+	
 }
 
 SortingAlgorithm::SortingAlgorithm(std::string name, std::string description){

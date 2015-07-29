@@ -78,6 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="InsertionSorter.cpp" />
     <ClCompile Include="Sort.cpp" />
     <ClCompile Include="SortHelper.cpp" />
     <ClCompile Include="SortingAlgorithm.cpp" />
@@ -85,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h" />
+    <ClInclude Include="InsertionSorter.h" />
     <ClInclude Include="Sort.h" />
     <ClInclude Include="SortHelper.h" />
     <ClInclude Include="SortingAlgorithm.h" />

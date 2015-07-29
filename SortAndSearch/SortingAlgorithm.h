@@ -6,7 +6,7 @@
 #include <string>
 
 class SortingAlgorithm{
-private:
+protected:
 	std::string _name, _description;
 public:
 	SortingAlgorithm();
