@@ -5,21 +5,18 @@ FSort::FSort(){
 }
 
 void FSort::InsertionSort(std::vector<int16_t> &sortable){
-	std::vector<int16_t> sortedVector = sortable;
-	int16_t temp, j;
+	int16_t j;
 	for (int i = 1; i < sortable.size(); i++){
 		j = i;
 		while (j > 0 && sortable.at(j) < sortable.at(j - 1)){
-			temp = sortable.at(j);
-			sortable.at(j) = sortable.at(j - 1);
-			sortable.at(j - 1) = temp;
+			SwapVectorElements(sortable, j, j - 1);
 			j--;
 		}
 	}
 }
 
 void FSort::SelectionSort(std::vector<int16_t> &sortable){
-	int16_t minPos, temp;
+	int16_t minPos;;
 	for (int i = 0; i < sortable.size() - 1; i++){
 		minPos = i;
 		for (int j = i + 1; j < sortable.size(); j++){
@@ -28,9 +25,7 @@ void FSort::SelectionSort(std::vector<int16_t> &sortable){
 			}
 		}
 		if (minPos != i){
-			temp = sortable.at(i);
-			sortable.at(i) = sortable.at(minPos);
-			sortable.at(minPos) = temp;
+			SwapVectorElements(sortable, i, minPos);
 		}
 	}
 }
@@ -42,9 +37,7 @@ void FSort::BubbleSort(std::vector<int16_t> &sortable){
 		swapOccurred = false;
 		for (int i = 1; i < sortable.size(); i++){
 			if (sortable.at(i) < sortable.at(i - 1)){
-				temp = sortable.at(i);
-				sortable.at(i) = sortable.at(i - 1);
-				sortable.at(i - 1) = temp;
+				SwapVectorElements(sortable, i, i - 1);
 				swapOccurred = true;
 			}
 		}
@@ -63,4 +56,10 @@ std::vector<int16_t> FSort::GenerateGapSequence(ShellSortGapSequence sequence){
 		break;
 	}
 	return gapSequence;
+}
+
+void FSort::SwapVectorElements(std::vector<int16_t> &vector, int i1, int i2){
+	int16_t tmp = vector.at(i1);
+	vector.at(i1) = vector.at(i2);
+	vector.at(i2) = tmp;
 }

@@ -3,7 +3,6 @@
 #include <vector>
 #include <cstdint>
 
-
 class FSort{
 	
 
@@ -21,4 +20,5 @@ public:
 
 private:
 	std::vector<int16_t> GenerateGapSequence(ShellSortGapSequence sequence);
+	void SwapVectorElements(std::vector<int16_t> &vector, int i1, int i2);
 };

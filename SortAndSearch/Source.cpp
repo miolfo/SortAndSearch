@@ -5,7 +5,7 @@
 int main(){
 	FSort Sorter;
 	std::vector<int16_t> intArray = SortHelper::GenerateRandomArray();
-	Sorter.BubbleSort(intArray);
+	Sorter.InsertionSort(intArray);
 	SortHelper::PrintVector(intArray);
 	return 0;
 }
