@@ -1,4 +1,4 @@
-#include "SortingAlgorithm.h";
+#include "../SortingAlgorithm.h";
 
 class ShellSorter : public SortingAlgorithm{
 public:

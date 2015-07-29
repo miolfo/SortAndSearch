@@ -78,21 +78,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BubbleSorter.cpp" />
-    <ClCompile Include="InsertionSorter.cpp" />
-    <ClCompile Include="SelectionSorter.cpp" />
-    <ClCompile Include="ShellSorter.cpp" />
+    <ClCompile Include="SortingAlgorithms\BubbleSorter.cpp" />
+    <ClCompile Include="SortingAlgorithms\InsertionSorter.cpp" />
+    <ClCompile Include="SortingAlgorithms\SelectionSorter.cpp" />
+    <ClCompile Include="SortingAlgorithms\ShellSorter.cpp" />
     <ClCompile Include="SortHelper.cpp" />
     <ClCompile Include="SortingAlgorithm.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BubbleSorter.h" />
+    <ClInclude Include="SortingAlgorithms\BubbleSorter.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="Config.h" />
-    <ClInclude Include="InsertionSorter.h" />
-    <ClInclude Include="SelectionSorter.h" />
-    <ClInclude Include="ShellSorter.h" />
+    <ClInclude Include="SortingAlgorithms\InsertionSorter.h" />
+    <ClInclude Include="SortingAlgorithms\SelectionSorter.h" />
+    <ClInclude Include="SortingAlgorithms\ShellSorter.h" />
     <ClInclude Include="SortHelper.h" />
     <ClInclude Include="SortingAlgorithm.h" />
   </ItemGroup>

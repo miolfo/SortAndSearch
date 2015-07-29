@@ -1,8 +1,8 @@
 #include "SortHelper.h"
-#include "BubbleSorter.h"
-#include "InsertionSorter.h"
-#include "SelectionSorter.h"
-#include "ShellSorter.h"
+#include "SortingAlgorithms/BubbleSorter.h"
+#include "SortingAlgorithms/InsertionSorter.h"
+#include "SortingAlgorithms/SelectionSorter.h"
+#include "SortingAlgorithms/ShellSorter.h"
 
 namespace SortHelper{
 	std::vector<int16_t> GenerateRandomArray(){

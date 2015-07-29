@@ -1,5 +1,5 @@
 #include "Common.h"
-#include "ShellSorter.h"
+#include "SortingAlgorithms\ShellSorter.h"
 
 int main(){
 	//FSort Sorter;

@@ -30,16 +30,16 @@
     <ClCompile Include="SortingAlgorithm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InsertionSorter.cpp">
+    <ClCompile Include="SortingAlgorithms\BubbleSorter.cpp">
       <Filter>Source Files\SortingAlgorithms</Filter>
     </ClCompile>
-    <ClCompile Include="SelectionSorter.cpp">
+    <ClCompile Include="SortingAlgorithms\InsertionSorter.cpp">
       <Filter>Source Files\SortingAlgorithms</Filter>
     </ClCompile>
-    <ClCompile Include="BubbleSorter.cpp">
+    <ClCompile Include="SortingAlgorithms\SelectionSorter.cpp">
       <Filter>Source Files\SortingAlgorithms</Filter>
     </ClCompile>
-    <ClCompile Include="ShellSorter.cpp">
+    <ClCompile Include="SortingAlgorithms\ShellSorter.cpp">
       <Filter>Source Files\SortingAlgorithms</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,20 +53,20 @@
     <ClInclude Include="SortingAlgorithm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="InsertionSorter.h">
-      <Filter>Header Files\SortingAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="SelectionSorter.h">
-      <Filter>Header Files\SortingAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="BubbleSorter.h">
-      <Filter>Header Files\SortingAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="ShellSorter.h">
-      <Filter>Header Files\SortingAlgorithms</Filter>
-    </ClInclude>
     <ClInclude Include="Common.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingAlgorithms\BubbleSorter.h">
+      <Filter>Header Files\SortingAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingAlgorithms\InsertionSorter.h">
+      <Filter>Header Files\SortingAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingAlgorithms\SelectionSorter.h">
+      <Filter>Header Files\SortingAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingAlgorithms\ShellSorter.h">
+      <Filter>Header Files\SortingAlgorithms</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
