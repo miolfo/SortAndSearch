@@ -15,7 +15,10 @@ public:
 	virtual void Sort(std::vector<int16_t> &sortable);
 
 	std::string GetName();
-	std::string SetName();
+	void SetName(std::string name);
 	std::string GetDescription();
-	std::string SetDescription();
+	void SetDescription(std::string description);
+	std::string GetAllInfo();
+	
+	void PrintInfo();
 };

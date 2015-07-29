@@ -80,12 +80,14 @@
   <ItemGroup>
     <ClCompile Include="Sort.cpp" />
     <ClCompile Include="SortHelper.cpp" />
+    <ClCompile Include="SortingAlgorithm.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h" />
     <ClInclude Include="Sort.h" />
     <ClInclude Include="SortHelper.h" />
+    <ClInclude Include="SortingAlgorithm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
