@@ -48,7 +48,6 @@ void FSort::ShellSort(std::vector<int16_t> &sortable, ShellSortGapSequence seque
 	std::vector<int16_t> gapSequence = GenerateGapSequence(sequence);
 	int16_t tmp, l, gap;
 	for (int i = 0; i < gapSequence.size(); i++){
-		std::cout << gapSequence.at(i) << std::endl;
 		gap = gapSequence.at(i);
 		for (int j = gap; j < sortable.size(); j++){
 			for (l = j-gap; l >= 0 && sortable.at(l) > sortable.at(l+gap); l -= gap){
@@ -73,3 +72,6 @@ void FSort::SwapVectorElements(std::vector<int16_t> &vector, int i1, int i2){
 	vector.at(i1) = vector.at(i2);
 	vector.at(i2) = tmp;
 }
+
+
+

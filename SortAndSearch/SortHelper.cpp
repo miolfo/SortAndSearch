@@ -57,4 +57,40 @@ namespace SortHelper{
 		}
 		std::cout << std::endl;
 	}
+
+	void CompareMethods(std::vector<int16_t> vect){
+		std::vector<int16_t> vectorCopy = vect;
+		//Test all methods with random array
+		std::cout << "Comparing methods with vector of length " << vect.size() << std::endl;
+		float insertionTime, selectionTime, bubbleTime, shellTime;
+		FSort sorter;
+
+		clock_t beginTime = clock();
+		sorter.InsertionSort(vectorCopy);
+		insertionTime = float(clock() - beginTime) / CLOCKS_PER_SEC;
+		vectorCopy = vect;
+
+		beginTime = clock();
+		sorter.BubbleSort(vectorCopy);
+		bubbleTime = float(clock() - beginTime) / CLOCKS_PER_SEC;
+		vectorCopy = vect;
+
+		beginTime = clock();
+		sorter.SelectionSort(vectorCopy);
+		selectionTime = float(clock() - beginTime) / CLOCKS_PER_SEC;
+		vectorCopy = vect;
+
+		beginTime = clock();
+		sorter.ShellSort(vectorCopy, sorter.SEQUENCE_CIURA);
+		shellTime = float(clock() - beginTime) / CLOCKS_PER_SEC;
+		vectorCopy = vect;
+
+		std::cout << "Finished comparing" << std::endl;
+		std::cout << "Insertion sort took " << insertionTime << "s" << std::endl;
+		std::cout << "Bubble sort took " << bubbleTime << "s" << std::endl;
+		std::cout << "Selection sort took " << selectionTime << "s" << std::endl;
+		std::cout << "Shell sort took " << shellTime << "s" << std::endl;
+
+	}
 }
+

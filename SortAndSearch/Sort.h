@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 #include <cstdint>
+#include <ctime>
+#include "SortHelper.h"
 
 class FSort{
 	
@@ -17,6 +19,7 @@ public:
 	void BubbleSort(std::vector<int16_t> &sortable);
 	//Shellsort of vector<int16_t>
 	void ShellSort(std::vector<int16_t> &sortable, ShellSortGapSequence sequence);
+
 
 private:
 	std::vector<int16_t> GenerateGapSequence(ShellSortGapSequence sequence);

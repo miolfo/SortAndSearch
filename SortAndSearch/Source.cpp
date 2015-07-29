@@ -3,9 +3,11 @@
 #include "SortHelper.h"
 
 int main(){
-	FSort Sorter;
-	std::vector<int16_t> intArray = SortHelper::GenerateRandomArray();
-	Sorter.ShellSort(intArray, Sorter.SEQUENCE_CIURA);
-	SortHelper::PrintVector(intArray);
+	//FSort Sorter;
+	std::vector<int16_t> intVector = SortHelper::GenerateRandomArray();
+	//Sorter.BubbleSort(intVector);
+	//Sorter.ShellSort(intVector, Sorter.SEQUENCE_CIURA);
+	//SortHelper::PrintVector(intVector);
+	SortHelper::CompareMethods(intVector);
 	return 0;
 }
