@@ -13,18 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\SearchAlgorithms">
+    <Filter Include="Header Files\SortingAlgorithms">
       <UniqueIdentifier>{87956660-5f65-46da-9880-a1df8890e0ec}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\SearchAlgorithms">
+    <Filter Include="Source Files\SortingAlgorithms">
       <UniqueIdentifier>{c0d16314-4704-4560-b218-1fa2a3b39f7c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SortHelper.cpp">
@@ -34,22 +31,19 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="InsertionSorter.cpp">
-      <Filter>Source Files\SearchAlgorithms</Filter>
+      <Filter>Source Files\SortingAlgorithms</Filter>
     </ClCompile>
     <ClCompile Include="SelectionSorter.cpp">
-      <Filter>Source Files\SearchAlgorithms</Filter>
+      <Filter>Source Files\SortingAlgorithms</Filter>
     </ClCompile>
     <ClCompile Include="BubbleSorter.cpp">
-      <Filter>Source Files\SearchAlgorithms</Filter>
+      <Filter>Source Files\SortingAlgorithms</Filter>
     </ClCompile>
     <ClCompile Include="ShellSorter.cpp">
-      <Filter>Source Files\SearchAlgorithms</Filter>
+      <Filter>Source Files\SortingAlgorithms</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SortHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -60,16 +54,19 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InsertionSorter.h">
-      <Filter>Header Files\SearchAlgorithms</Filter>
+      <Filter>Header Files\SortingAlgorithms</Filter>
     </ClInclude>
     <ClInclude Include="SelectionSorter.h">
-      <Filter>Header Files\SearchAlgorithms</Filter>
+      <Filter>Header Files\SortingAlgorithms</Filter>
     </ClInclude>
     <ClInclude Include="BubbleSorter.h">
-      <Filter>Header Files\SearchAlgorithms</Filter>
+      <Filter>Header Files\SortingAlgorithms</Filter>
     </ClInclude>
     <ClInclude Include="ShellSorter.h">
-      <Filter>Header Files\SearchAlgorithms</Filter>
+      <Filter>Header Files\SortingAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

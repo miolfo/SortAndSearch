@@ -1,4 +1,8 @@
 #include "SortHelper.h"
+#include "BubbleSorter.h"
+#include "InsertionSorter.h"
+#include "SelectionSorter.h"
+#include "ShellSorter.h"
 
 namespace SortHelper{
 	std::vector<int16_t> GenerateRandomArray(){
@@ -63,25 +67,27 @@ namespace SortHelper{
 		//Test all methods with random array
 		std::cout << "Comparing methods with vector of length " << vect.size() << std::endl;
 		float insertionTime, selectionTime, bubbleTime, shellTime;
-		FSort sorter;
-
+		InsertionSorter iSort;
+		BubbleSorter bSort;
+		SelectionSorter seSort;
+		ShellSorter shSort;
 		clock_t beginTime = clock();
-		sorter.InsertionSort(vectorCopy);
+		iSort.Sort(vectorCopy);
 		insertionTime = float(clock() - beginTime) / CLOCKS_PER_SEC;
 		vectorCopy = vect;
 
 		beginTime = clock();
-		sorter.BubbleSort(vectorCopy);
+		bSort.Sort(vectorCopy);
 		bubbleTime = float(clock() - beginTime) / CLOCKS_PER_SEC;
 		vectorCopy = vect;
 
 		beginTime = clock();
-		sorter.SelectionSort(vectorCopy);
+		seSort.Sort(vectorCopy);
 		selectionTime = float(clock() - beginTime) / CLOCKS_PER_SEC;
 		vectorCopy = vect;
 
 		beginTime = clock();
-		sorter.ShellSort(vectorCopy, sorter.SEQUENCE_CIURA);
+		shSort.Sort(vectorCopy, shSort.SEQUENCE_CIURA);
 		shellTime = float(clock() - beginTime) / CLOCKS_PER_SEC;
 		vectorCopy = vect;
 

@@ -1,10 +1,4 @@
-#include <iostream>
-#include "Sort.h"
-#include "SortHelper.h"
-#include "SortingAlgorithm.h"
-#include "InsertionSorter.h"
-#include "SelectionSorter.h"
-#include "BubbleSorter.h"
+#include "Common.h"
 #include "ShellSorter.h"
 
 int main(){

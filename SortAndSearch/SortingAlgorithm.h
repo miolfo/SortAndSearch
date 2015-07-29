@@ -1,9 +1,5 @@
 #pragma once
-#include <iostream>
-#include <vector>
-#include <cstdint>
-#include <ctime>
-#include <string>
+#include "Common.h"
 
 class SortingAlgorithm{
 protected:
