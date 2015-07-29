@@ -4,62 +4,55 @@ FSort::FSort(){
 	std::cout << "Initialized FSort" << std::endl;
 }
 
-std::vector<int16_t> FSort::InsertionSort(std::vector<int16_t> sortable){
+void FSort::InsertionSort(std::vector<int16_t> &sortable){
 	std::vector<int16_t> sortedVector = sortable;
 	int16_t temp, j;
-	for (int i = 1; i < sortedVector.size(); i++){
+	for (int i = 1; i < sortable.size(); i++){
 		j = i;
-		while (j > 0 && sortedVector.at(j) < sortedVector.at(j - 1)){
-			temp = sortedVector.at(j);
-			sortedVector.at(j) = sortedVector.at(j - 1);
-			sortedVector.at(j - 1) = temp;
+		while (j > 0 && sortable.at(j) < sortable.at(j - 1)){
+			temp = sortable.at(j);
+			sortable.at(j) = sortable.at(j - 1);
+			sortable.at(j - 1) = temp;
 			j--;
 		}
 	}
-	return sortedVector;
 }
 
-std::vector<int16_t> FSort::SelectionSort(std::vector<int16_t> sortable){
-	std::vector<int16_t> sortedVector = sortable;
+void FSort::SelectionSort(std::vector<int16_t> &sortable){
 	int16_t minPos, temp;
-	for (int i = 0; i < sortedVector.size() - 1; i++){
+	for (int i = 0; i < sortable.size() - 1; i++){
 		minPos = i;
-		for (int j = i + 1; j < sortedVector.size(); j++){
-			if (sortedVector[j] < sortedVector[minPos]){
+		for (int j = i + 1; j < sortable.size(); j++){
+			if (sortable[j] < sortable[minPos]){
 				minPos = j;
 			}
 		}
 		if (minPos != i){
-			temp = sortedVector.at(i);
-			sortedVector.at(i) = sortedVector.at(minPos);
-			sortedVector.at(minPos) = temp;
+			temp = sortable.at(i);
+			sortable.at(i) = sortable.at(minPos);
+			sortable.at(minPos) = temp;
 		}
 	}
-	return sortedVector;
 }
 
-std::vector<int16_t> FSort::BubbleSort(std::vector<int16_t> sortable){
-	std::vector<int16_t> sortedVector = sortable;
+void FSort::BubbleSort(std::vector<int16_t> &sortable){
 	int16_t temp;
 	bool swapOccurred = true;
 	while (swapOccurred){
 		swapOccurred = false;
-		for (int i = 1; i < sortedVector.size(); i++){
-			if (sortedVector.at(i) < sortedVector.at(i - 1)){
-				temp = sortedVector.at(i);
-				sortedVector.at(i) = sortedVector.at(i - 1);
-				sortedVector.at(i - 1) = temp;
+		for (int i = 1; i < sortable.size(); i++){
+			if (sortable.at(i) < sortable.at(i - 1)){
+				temp = sortable.at(i);
+				sortable.at(i) = sortable.at(i - 1);
+				sortable.at(i - 1) = temp;
 				swapOccurred = true;
 			}
 		}
 	}
-	return sortedVector;
 }
 
-std::vector<int16_t> FSort::ShellSort(std::vector<int16_t> sortable, ShellSortGapSequence sequence){
-	std::vector<int16_t> sortedVector = sortable;
+void FSort::ShellSort(std::vector<int16_t> &sortable, ShellSortGapSequence sequence){
 	std::vector<int16_t> gapSequence = GenerateGapSequence(sequence);
-	return sortedVector;
 }
 
 std::vector<int16_t> FSort::GenerateGapSequence(ShellSortGapSequence sequence){

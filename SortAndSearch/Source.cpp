@@ -4,8 +4,8 @@
 
 int main(){
 	FSort Sorter;
-	std::vector<int16_t> randomIntegers = SortHelper::GenerateRandomArray();
-	std::vector<int16_t> sortedIntegers = Sorter.BubbleSort(randomIntegers);
-	SortHelper::PrintVector(SortHelper::GenerateAlmostSortedArray());
+	std::vector<int16_t> intArray = SortHelper::GenerateRandomArray();
+	Sorter.BubbleSort(intArray);
+	SortHelper::PrintVector(intArray);
 	return 0;
 }
