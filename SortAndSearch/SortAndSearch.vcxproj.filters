@@ -36,6 +36,15 @@
     <ClCompile Include="InsertionSorter.cpp">
       <Filter>Source Files\SearchAlgorithms</Filter>
     </ClCompile>
+    <ClCompile Include="SelectionSorter.cpp">
+      <Filter>Source Files\SearchAlgorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="BubbleSorter.cpp">
+      <Filter>Source Files\SearchAlgorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellSorter.cpp">
+      <Filter>Source Files\SearchAlgorithms</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sort.h">
@@ -51,6 +60,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InsertionSorter.h">
+      <Filter>Header Files\SearchAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionSorter.h">
+      <Filter>Header Files\SearchAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="BubbleSorter.h">
+      <Filter>Header Files\SearchAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellSorter.h">
       <Filter>Header Files\SearchAlgorithms</Filter>
     </ClInclude>
   </ItemGroup>

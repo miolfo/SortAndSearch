@@ -11,7 +11,7 @@ protected:
 public:
 	SortingAlgorithm();
 	SortingAlgorithm(std::string name, std::string description);
-
+	/** */
 	virtual void Sort(std::vector<int16_t> &sortable);
 
 	std::string GetName();

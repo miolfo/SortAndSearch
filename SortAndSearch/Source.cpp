@@ -3,6 +3,9 @@
 #include "SortHelper.h"
 #include "SortingAlgorithm.h"
 #include "InsertionSorter.h"
+#include "SelectionSorter.h"
+#include "BubbleSorter.h"
+#include "ShellSorter.h"
 
 int main(){
 	//FSort Sorter;
@@ -13,7 +16,7 @@ int main(){
 	//SortHelper::CompareMethods(intVector);
 	//SortingAlgorithm asd("kek", "sellanen setti");
 	//asd.PrintInfo();
-	InsertionSorter asd;
+	ShellSorter asd;
 	asd.Sort(intVector);
 	SortHelper::PrintVector(intVector);
 	return 0;

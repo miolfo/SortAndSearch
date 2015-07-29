@@ -12,6 +12,7 @@ SortingAlgorithm::SortingAlgorithm(std::string name, std::string description){
 
 void SortingAlgorithm::Sort(std::vector<int16_t> &sortable){
 	//No default implementation
+	std::cout << "No sorting method implemented for the class" << std::endl;
 }
 
 std::string SortingAlgorithm::GetDescription(){
@@ -30,6 +31,7 @@ std::string SortingAlgorithm::GetAllInfo(){
 	// TODO: Build a "package" with info such as name, short&long description, optimal runtimes etc
 	return _name + ":\n" + _description;
 }
+
 void SortingAlgorithm::PrintInfo(){
 	// TODO: Build a "package" with info such as name, short&long description, optimal runtimes etc
 	std::cout << GetAllInfo() << std::endl;
